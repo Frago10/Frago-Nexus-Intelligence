@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { LogoMark } from "@/components/brand/LogoMark";
 import { Magnetic } from "@/components/interaction/Magnetic";
 import { LazyMount } from "@/components/perf/LazyMount";
+import { ContactForm } from "@/components/sections/ContactForm";
 
 const ParticleField = dynamic(
   () => import("@/components/three/ParticleField").then((m) => m.ParticleField),
@@ -57,25 +58,15 @@ export function CTA() {
             cero compromiso.
           </p>
 
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Magnetic strength={0.32}>
-              <a
-                href="mailto:hello@fragosnexus.ai"
-                className="group relative inline-flex items-center gap-3 overflow-hidden rounded-full bg-nexus-neon px-8 py-4 text-[13px] font-semibold tracking-wider2 text-nexus-void shadow-neon-md transition-shadow hover:shadow-neon-lg"
-              >
-                <span className="relative z-10">AGENDAR BRIEFING</span>
-                <svg className="relative z-10 h-3 w-3 transition-transform group-hover:translate-x-1" viewBox="0 0 12 12" fill="none">
-                  <path d="M1 6h10m0 0L7 2m4 4L7 10" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
-              </a>
-            </Magnetic>
+          <ContactForm />
+
+          <div className="mt-8 flex items-center justify-center">
             <Magnetic strength={0.18}>
               <a
                 href="mailto:hello@fragosnexus.ai"
                 className="font-mono text-[12px] tracking-wider2 text-nexus-chrome/60 underline-offset-4 transition-colors hover:text-nexus-neon hover:underline"
               >
-                hello@fragosnexus.ai
+                o escríbenos: hello@fragosnexus.ai
               </a>
             </Magnetic>
           </div>

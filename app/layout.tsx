@@ -1,4 +1,7 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { JsonLd } from "@/components/seo/JsonLd";
 import "./globals.css";
 
 const SITE_URL =
@@ -108,7 +111,10 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased bg-nexus-void text-nexus-chrome">
+        <JsonLd />
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

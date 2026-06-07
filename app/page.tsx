@@ -12,6 +12,7 @@ import { PorQueNexus } from "@/components/sections/PorQueNexus";
 import { CaseStudies } from "@/components/sections/CaseStudies";
 import { Process } from "@/components/sections/Process";
 import { Manifesto } from "@/components/sections/Manifesto";
+import { FAQ } from "@/components/sections/FAQ";
 import { CTA } from "@/components/sections/CTA";
 import { IntroProvider } from "@/components/intro/IntroContext";
 import { CinematicLoader } from "@/components/intro/CinematicLoader";
@@ -36,6 +37,7 @@ export default function HomePage() {
         <CaseStudies />
         <Process />
         <Manifesto />
+        <FAQ />
         <CTA />
         <Footer />
       </main>

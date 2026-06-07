@@ -8,6 +8,7 @@ const links = [
   { label: "Servicios", href: "#servicios" },
   { label: "Por qué", href: "#por-que" },
   { label: "Proceso", href: "#proceso" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 export function Nav() {
