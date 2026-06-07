@@ -34,16 +34,17 @@ export function BrandBridge() {
         className="pointer-events-none absolute inset-0 bg-radial-neon opacity-40"
       />
       {/* Fine grid */}
-      <div className="pointer-events-none absolute inset-0 grid-fine opacity-15 mask-radial-fade" />
+      <div className="pointer-events-none absolute inset-0 grid-fine opacity-[0.06] mask-radial-fade" />
 
-      {/* Two horizontal neon ribbons that drift opposite ways on scroll */}
+      {/* Two horizontal neon ribbons that drift opposite ways on scroll —
+          kept clear of the headline so they frame it rather than cross it */}
       <motion.div
         style={{ x: lineXLeft }}
-        className="pointer-events-none absolute left-0 right-0 top-[35%] h-px bg-gradient-to-r from-transparent via-nexus-neon/50 to-transparent shadow-[0_0_24px_#A6FF00]"
+        className="pointer-events-none absolute left-0 right-0 top-[20%] h-px bg-gradient-to-r from-transparent via-nexus-neon/35 to-transparent shadow-[0_0_16px_rgba(166,255,0,0.4)]"
       />
       <motion.div
         style={{ x: lineXRight }}
-        className="pointer-events-none absolute left-0 right-0 bottom-[35%] h-px bg-gradient-to-r from-transparent via-nexus-neon/30 to-transparent shadow-[0_0_24px_#A6FF00]"
+        className="pointer-events-none absolute left-0 right-0 bottom-[20%] h-px bg-gradient-to-r from-transparent via-nexus-neon/20 to-transparent shadow-[0_0_16px_rgba(166,255,0,0.3)]"
       />
 
       <div className="relative mx-auto max-w-6xl px-6 lg:px-10">
@@ -64,14 +65,14 @@ export function BrandBridge() {
             active={inView}
             text="Hay una diferencia"
             baseDelay={0.2}
-            wordClassName="text-nexus-chrome/80"
+            wordClassName="text-nexus-chrome/70"
             wrapperClassName="block"
           />
           <WordReveal
             active={inView}
             text="entre usar IA"
             baseDelay={0.5}
-            wordClassName="text-metallic"
+            wordClassName="text-nexus-chrome"
             wrapperClassName="block"
           />
           <WordReveal

@@ -104,10 +104,10 @@ export function Anatomy() {
 
 function ExplodedStack({ inView }: { inView: boolean }) {
   return (
-    <div className="relative mx-auto" style={{ perspective: "1400px" }}>
+    <div className="relative mx-auto" style={{ perspective: "2200px" }}>
       <div
         style={{
-          transform: "rotateX(18deg) rotateZ(-1deg)",
+          transform: "rotateX(7deg)",
           transformStyle: "preserve-3d",
         }}
         className="relative space-y-4"
@@ -115,7 +115,7 @@ function ExplodedStack({ inView }: { inView: boolean }) {
         {layers.map((l, i) => (
           <motion.div
             key={l.n}
-            initial={{ opacity: 0, y: 40, rotateX: 35 }}
+            initial={{ opacity: 0, y: 40, rotateX: 16 }}
             animate={inView ? { opacity: 1, y: 0, rotateX: 0 } : {}}
             transition={{
               delay: 0.15 + i * 0.09,
